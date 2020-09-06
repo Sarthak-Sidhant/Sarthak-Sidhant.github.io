@@ -1,0 +1,293 @@
+body{
+    background: url("/ankur logo.jpg"); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 1024px;
+    height:768px;
+    font-weight: bolder;
+  }
+.dropdown{
+margin: 2px;
+padding: 0px;
+list-style: none;
+color:white;
+transition: 0.8 ease-in-out;
+position:absolute;
+left: 12.5%;
+z-index: 0;
+}
+.dropdown li{
+float: left;
+width:200px;
+height:40px;
+background-color:whitesmoke;
+text-align: center;
+opacity:.8;
+line-height:40px;
+font-size:20px;
+border: solid rgb(0, 0, 0) 4px;
+margin:2px;
+
+}
+.dropdown li a{
+text-decoration: none;
+color:black;
+display:block;
+
+}
+.dropdown li a:hover{
+background-color: lightblue;
+}
+ul li ul li{
+display:none;
+}
+ul li:hover ul li{
+display:block;
+}
+.hms{
+list-style:none;
+}
+
+.sidebar{
+    position: fixed;
+    width: 240px;
+    left: -240px;
+    height: 100%;
+    background: #5fc2c2;
+    transition: all .5s ease;
+    z-index:1111;
+  }
+  .sidebar header{
+    font-size: 20px;
+    color: #220062;
+    line-height: 70px;
+    text-align: center;
+    background: #006eff;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+  } 
+  .sidebar a{
+    display: block;
+    height: 65px;
+    width: 100%;
+    color: #220062;
+    line-height: 65px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255,255,255,.1);
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease;
+    border-top: 2px solid black ;
+  }
+  .sidebar p{
+    display: block;
+    padding: 5px;
+    line-height: 7px;
+    border-bottom: 1px solid black;
+  }
+  a.active,a:hover{
+    border-left: 5px solid #31ff80;
+    border-right: 5px solid #31ff80;
+    color: #31ff80;
+  }
+  .sidebar a i{
+    font-size: 23px;
+    margin-right: 16px;
+  }
+  .sidebar a span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  #check{
+    display: none;
+  }
+  label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #f8bf02;
+    margin: 15px 30px;
+    font-size: 29px;
+    background: #019044;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .5s ease;
+  }
+  label #cancel{
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    margin-left: 245px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ label #cancel{
+    margin-left: 245px;
+    opacity: 1;
+    visibility: visible;
+  }
+  @media(max-width : 860px){
+    .sidebar{
+      height: auto;
+      width: 70px;
+      left: 0;
+      margin: 100px 0;
+    }
+    header,#btn,#cancel{
+      display: none;
+    }
+    span{
+      position: absolute;
+      margin-left: 23px;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .sidebar a{
+      height: 60px;
+    }
+    .sidebar a i{
+      margin-left: -10px;
+    }
+    a:hover {
+      width: 200px;
+      background: inherit;
+    }
+    .sidebar a:hover span{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .ca{
+    font-size: 14px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  .sidebarright{
+    position: fixed;
+    width: 240px;
+    right: -240px;
+    height: 100%;
+    background: #9dff00;
+    transition: all .5s ease;
+  }
+  .sidebarright header{
+    font-size: 20px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #1b1b1b;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+  } 
+  .sidebarright a{
+    display: block;
+    height: 65px;
+    width: 100%;
+    color: rgb(0, 179, 95);
+    line-height: 65px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid ;
+    border-right: 5px solid transparent;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease;
+  }
+  a.active,a:hover{
+    border-right: 5px solid #b93632;
+    color: #b93632;
+  }
+  .sidebarright a i{
+    font-size: 23px;
+    margin-right: 16px;
+  }
+  .sidebarright a span{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  #check{
+    display: none;
+  }
+  label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #262626;
+    margin: 15px 30px;
+    font-size: 29px;
+    background: #262626;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 45px;
+    transition: all .5s ease;
+  }
+  label #cancel{
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ .sidebarright{
+    right: 0;
+  }
+  #check:checked ~ label #btn{
+    margin-right: 245px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #check:checked ~ label #cancel{
+    margin-right: 245px;
+    opacity: 1;
+    visibility: visible;
+  }
+  @media(max-width : 860px){
+    .sidebarright{
+      height: auto;
+      width: 70px;
+      right: 0;
+      margin: 100px 0;
+    }
+    header,#btn,#cancel{
+      display: none;
+    }
+    span{
+      position: absolute;
+      margin-right: 23px;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .sidebarright a{
+      height: 60px;
+    }
+    .sidebarright a i{
+      margin-right: -10px;
+    }
+    a:hover {
+      width: 200px;
+      background: inherit;
+    }
+    .sidebarright a:hover span{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .thelargerone{
+  font-size:14px;  
+  }
+  
