@@ -1,5 +1,5 @@
 body{
-    background: url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=709&q=80"); 
+    background: url("/ankur logo.jpg"); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,6 +17,7 @@ color:white;
 transition: 0.8 ease-in-out;
 position:absolute;
 left: 12.5%;
+top:5%;
 z-index: 0;
 }
 .dropdown li{
@@ -25,7 +26,7 @@ width:200px;
 height:40px;
 background-color:whitesmoke;
 text-align: center;
-opacity:.8;
+opacity:1;
 line-height:40px;
 font-size:20px;
 border: solid rgb(0, 0, 0) 4px;
@@ -52,7 +53,8 @@ list-style:none;
 }
 
 .sidebar{
-    position: fixed;
+    position: absolute;
+    top:0%;
     width: 240px;
     left: -240px;
     height: 100%;
@@ -104,9 +106,12 @@ list-style:none;
   }
   #check{
     display: none;
+    position: absolute;
+    top:5%;
   }
   label #btn,label #cancel{
     position: absolute;
+    top:5%;
     cursor: pointer;
     color: white;
     border-radius: 5px;
@@ -180,7 +185,8 @@ list-style:none;
   
   
   .sidebarright{
-    position: fixed;
+    position: absolute;
+    top:0%;
     width: 240px;
     right: -240px;
     height: 100%;
@@ -363,3 +369,75 @@ list-style:none;
   .spamuter:hover{
     display:none;
   }
+  
+
+
+
+
+
+  #slideshower {
+    overflow: hidden;
+  }
+  #slideshower figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slideshower infinite;
+    transition: 0.4s ease-in-out;
+  }
+  #slideshower figure img {
+    width: 20%;
+    float: left;
+  }
+  
+  @keyframes slideshower {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+  }
+  
+  .sft{
+ background: whitesmoke;
+ color:#1b1b1b;
+ border-radius:30px 30px 0 0;
+ width:900;
+ text-align:center;  
+ margin-bottom: 0px;
+ border: solid #1b1b1b;
+ border-bottom: transparent;
+}
+.Lorem{
+  background: whitesmoke;
+  color:#1b1b1b;
+  border-radius:0 0 30px 30px;
+  width:900;
+  text-align:center;  
+  margin-top:0px;
+  border: solid #1b1b1b;
+  border-top: transparent;
+}
