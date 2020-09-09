@@ -7,6 +7,7 @@ body{
     width: 1024px;
     height:768px;
     font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
   }
 .dropdown{
@@ -21,6 +22,7 @@ top:5%;
 z-index: 0;
 }
 .dropdown li{
+cursor:pointer;
 float: left;
 width:200px;
 height:40px;
@@ -50,6 +52,9 @@ display:block;
 }
 .hms{
 list-style:none;
+}
+.rar{
+  margin:0px;
 }
 
 .sidebar{
@@ -185,10 +190,10 @@ list-style:none;
   
   
   .sidebarright{
-    position: absolute;
+    position: fixed;
     top:0%;
     width: 240px;
-    right: -240px;
+    right:-240px;
     height: 100%;
     background:  #5fc2c2;
     transition: all .5s ease;
@@ -312,7 +317,7 @@ list-style:none;
   
     font-style: italic;
     text-transform: uppercase;
-    display: block;
+    display: none;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: whitesmoke blanchedalmond;  
     
@@ -325,11 +330,12 @@ list-style:none;
    margin-bottom: 0px;
   position: relative;
   background-color: rgb(5, 199, 173);
-  animation: text 6s 1;
+  animation: text 12s 1;
     color:whitesmoke;
     border-radius: 45px 45px 0 0;
     border:solid white;
     border-bottom:solid;
+  
   }
   .l{
     font-size:27.5px;
@@ -347,19 +353,23 @@ list-style:none;
     0%{
       color:khaki;
       border-bottom:transparent;
+      display:block;
     }
   30%{
     letter-spacing:12.5px;
     top:30%;
     border-bottom:transparent;
+    display:block;
   }
   85%{
     letter-spacing:20.5px;
     top:50%;
     border-bottom:transparent;
+    display:block;
   }
   100%{
     border-bottom:transparent;
+    display:block;
   }
   }
   
@@ -430,6 +440,7 @@ list-style:none;
  margin-bottom: 0px;
  border: solid #1b1b1b;
  border-bottom: transparent;
+ margin:0px;
 }
 .Lorem{
   background: whitesmoke;
@@ -440,4 +451,33 @@ list-style:none;
   margin-top:0px;
   border: solid #1b1b1b;
   border-top: transparent;
+  margin-bottom: 0px;
+}
+
+.activity{
+  display:inline-flex;
+  background-color: rgb(219, 226, 246);
+  font-size: 18px;
+  height:35px;
+  margin:2px;
+  position:relative;
+  left:60px;
+  border:solid;
+  border-right: greenyellow;
+  border-left:  red;
+}
+.activitya{
+  text-decoration: none;
+}
+.activitya:hover{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border:solid;
+  border-right: rgb(240, 142, 51);
+  border-left:  rgb(136, 240, 0);
+}
+.int{
+  color:red;
+  background:lavenderblush;
+  height:25px;
+  font-size:18px;
 }
