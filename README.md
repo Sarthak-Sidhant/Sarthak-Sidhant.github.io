@@ -1,4 +1,4 @@
 # Sarthak-Sidhant.github.io
 # My Official Website
-I am Figuring OUt How to Use Git And Guthub
+I am Figuring Out How to Use Git And Github
 VERY COOL!
