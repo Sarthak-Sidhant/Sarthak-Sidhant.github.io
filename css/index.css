@@ -4,8 +4,16 @@
     margin: 0;
     
 }
+@font-face {
+    font-family: 'Sono';
+    src: url("https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap");
+
 body{
-    font-family: "Poppins", sans-serif;
+    font-family: 'Sono';
+    background-color: #18191a;
 }
 .clr{
     clear: both;
@@ -16,89 +24,256 @@ li{
 footer .container .flow ul li a i , .home .container .text a , .about .text a, .numbers , .feedback .top-bottom div:hover i , footer .container .new .icon i , footer .container .about-me h4 , footer .container .new h4 , footer .container .flow h4{
     color: #fff;
 }
-
-/* Styling of Navbar */
-.nav , .about {
-    width: 80%;
-    margin: auto;
-    padding: 25px 0px 10px ;
+/*styling of navbar section*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight:300!important;
 }
-.nav .logo{
-    float: left;
-    padding-right: 30px;
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
 }
-
-.nav ul{
-    float: right;
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
 }
-.nav ul li{
-    float: left;
+::-webkit-scrollbar-thumb {
+    background: #242526;
 }
-.nav ul li a{
-    color: #222;
-    font-weight: 500;
-    font-size: 12px;
-    padding: 0 8px 0px 8px;
-    text-decoration: none;
-    padding-left: 25px;
+::selection{
+  background: rgb(0,123,255,0.3);
 }
-.nav ul li .active ,.projects ul li .active {
-    color: #007bff;
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
 }
-.nav ul li a:hover{
-    color: #007bff;
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
 }
-
+.navbar.sticky{
+  background: #1b1b1b;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Ms Madi', cursive;
+  font-weight: 300;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: #007bff;
+}
+.banner{
+  background: url("banner.jpg") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about{
+  padding: 30px 0;
+}
+.about .title{
+  font-size: 38px;
+  font-weight: 700;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a{
+    font-size: 27px;
+  }
+}
 /* Styling of Home Section */
 .home , .posts{
-    background-color: #F9F9FF;
+    background-color: #181818;
+    font-family: 'Sono', sans-serif;
 }
 .home .container{
     width: 80%;
     margin: auto;
     padding-top: 50px;
+    font-family: 'Sono', sans-serif;
 }
 .home .container .text{
     width: 50%;
     float: left;
     position: relative;
     top: 150px;
+    color: #fefefe;
+    font-family: 'Sono', sans-serif;
 }
+
 .home .container .text h6 , .about .text h6{
     font-weight: 400;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 1.2em ;
-    text-decoration: underline;
-    color: #222222;
+    color: #1fd655;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden; 
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end 3.5;
 }
-.home .container .text h1{
-    margin: 20px 0;
-    font-size: 50px;
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+@keyframes blink-caret {
+    from, to { border-color: transparent; border-right: .15em solid orange; }
+    50% { border-color: orange; }
+}
+
+.home .container .text span{
+    margin: 10px 0 0 0;
+    font-family: 'Ms Madi', cursive;
+    font-size: 64px;
+    font-weight: 300;
+    background: linear-gradient(to right, #ff0000,#ff00b4, #0064c8) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 10%;
+    border-radius: 30px;
+}
+.home .container .text span:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+    border-radius: 30px;
 }
 .home .container .text p , .about .text p {
+    margin-top:10px;
     margin-bottom: 1rem;
-    color: #777777;
     font-size: 17px;
     font-weight: 300;
     line-height: 1.625em;
     margin-bottom: 30px;
 }
 .home .container .text a {
+    font-family: 'Sono', sans-serif;
+    color:#1fd655;
     text-decoration: none;
-    background: linear-gradient(0deg, rgb(132, 144, 255) 0%, rgb(98, 189, 252) 100%);
-    padding: 10px 30px;
-    font-weight: 500;
-    font-size: 14px;
+    padding: 5px 30px;
+    font-weight: 300;
+    font-size: 18px;
+    border:solid #1fd655;
+    border-radius: 20px;
+    
 }
+
+
 .about .text a{
-    color:#04091E;
+    color:#18191a;
+    
 }
 .work{
     display:inline;
 }
 .home .container .text a:hover{
-    box-shadow: 0px 25px 0px  rgba(202, 224, 245, 0.2);
+    background-color: #1fd655;
+    opacity: 80;
+    color: #18191a;
+    transition: 0.5s;
+    font-weight: 300!important;
+    font-family: 'Sono', sans-serif;
 }
 .home .container .photo{
     float: right;
@@ -112,6 +287,7 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
 
 .about{
     padding: 30px 0px;
+    color: #E4E6EB;
 }
 .about .contain{
     width: 50%;
@@ -122,6 +298,12 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
 .about .contain .text {
     float: right;
     padding-top: 20px;
+    
+}
+.about .contain .text h2{
+    font-family: 'Indie Flower', cursive;   
+    font-weight: 400;
+    text-decoration: underline 2px dashed #1fd655;
 }
 .about .contain .photo{
     width: 100%;
@@ -134,33 +316,62 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
     font-size: 40px;
     margin: 20px 0px 25px;
 }
-.about  .text a:hover{
-    box-shadow: 0px 25px 0px  rgba(202, 224, 245, 0.2);
+.about .text a{
+    font-family: 'Josefin Slab', serif;
+    font-size:20px;
+}
+.about .text a{
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    color:#fefefe;
+    margin:0!important;
+    padding:0!important;
 }
 
+.about .contain .text p{
+    font-family: 'Sono', sans-serif;
+}
+.about .contain .text .p2{
+    font-family: 'Sono', sans-serif;
+    margin:0;
+    padding: 0;
+
+}
 /* Styling of Offers Section */ 
 
 .offers{
     text-align: center;
     width: 80%;
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 .offers h2{
+    font-family: 'Indie Flower', cursive;
+    text-decoration: 3px underline dashed #1fd655;
+    font-weight: 400!important;
     font-size: 36px;
-    color: #222222;
+    color: #fefefe;
     line-height: 1.2em ;
     font-weight: 600;
 }
 .offers p {
-    color: #777777;
+    font-family: 'Sono', sans-serif;
+    color: #feffef;
     font-size: 14px;
     font-weight: 300;
     padding-top: 20px;
 }
 .offers .items{
+    font-family: 'Indie Flower', cursive;
+    font-weight: 400!important;
     margin-top: 30px;
     padding: 50px 0px;
+}
+.offers .items h4{
+    font-size: 30px;
+    color: #1fd655;
+    font-weight: 400;
+    margin: 10px 0px;
 }
 .offers .items .item {
     width: 33.33333%;
@@ -169,38 +380,42 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
     float: left;
 }
 .offers .items .item i{
-    font-size: 30px;
+    font-size: 40px;
     padding-bottom: 20px;
 }
 .offers .items .item:hover h4 , .offers .items .item:hover i {
-    color: #8490FF;
+    color: #1fd655;
 }
 
 /* Styling of Numbers Section */ 
 
 .numbers{
-    background:linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    background: #292e3d;
     text-align: center;
-    padding: 50px 0px;
 }
 .numbers .items{
     width: 80%;
     margin: auto;
-    padding: 50px 0px;
+    padding: 25px 0px;
+    
 }
-.numbers .items .item{
+.numbers .items .item {
     float: left;
     width: 25%;
-    padding: 20px 0px;
+    padding: 10px 0px;
+    
+}
+.numbers .items .item p{
+    font-family: 'Sono', sans-serif;
+    font-weight:300;
+    color: #1fd655;
+
 }
 .numbers .items .item h2{
-    font-weight: 700;
+    font-weight: 300;
     font-size: 36px;
-}
-.numbers .items .item p , .feedback p, .projects p , .plan p ,  .posts  p , .plan .items .item ul li{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.625em;
+    font-family: 'Sono', sans-serif!important;
+    
 }
 
 /* Styling of Projects Section */
@@ -208,17 +423,36 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
 .projects {
     width: 80%;
     margin: auto;
-    padding: 50px 0px;
+    padding: 20px 0px;
 }
 .projects h2{
     font-size: 36px;
     margin-bottom: 5px; 
     margin-top: 30px;   
     text-align: center;
+    font-family: 'Indie Flower', cursive;
+    text-decoration: 3px underline dashed #1fd655;
+    color: #fefefe;
+    font-weight: 300;
 }
 .projects p , .projects h3{    
     text-align: center;
 }
+.projects p{
+    font-family: 'Sono', sans-serif;
+    color: #feffef;
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 10px;
+}
+.projects h3{
+    font-family: 'Indie Flower', cursive;
+    font-weight: 400;
+    color: #1fd655;
+    font-size: 20px;
+    margin: 0px 0px;
+}
+
 .projects .links{
     display: flex;
     justify-content: center;
@@ -269,86 +503,6 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
     width: 60px;
 }
 
-/* Styling of Feedback Section */
-
-.feedback{
-    background-color: #F9F9FF;
-    padding: 50px 0px;
-    position: relative;
-}
-.feedback .top-bottom{
-    position: absolute;
-    width: 45px ;
-    height: 90px;
-    background-color: #fff;
-    top: 56%;
-    right: 5%;    
-    box-shadow: -14.142px 14.142px 20px 0px rgba(157, 157, 157, 0.2);
-}
-.feedback .top-bottom div{
-    width: 100%;
-    height: 50%;
-    padding: 10px;
-    text-align: center;
-    border: solid 1px #f5f5f5;
-}
-.feedback .top-bottom div:hover{
-    background-color: #8490ff;
-}
-.feedback .top-bottom div i{
-    font-size: 18px;
-    color: #777777;
-}
-.feedback .head h2 , .plan h2 , .posts .head h2{
-    margin-top: 50px;
-    margin-bottom: 5px;
-    font-size: 36px;
-}
-.feedback .head h2 , .feedback .head p , .posts .head h2 {
-    text-align: center;
-}
-.feedback .container{
-    width: 90%;
-    margin: auto;
-}
-.feedback .container .items{
-    padding: 30px 0px ;
-    width: 90%;
-    margin: auto;
-}
-.feedback .container .items .item {
-    width: 48%;
-    margin-top: 50px;
-}
-.feedback .container .items .item1{
-    float: left;
-}
-.feedback .container .items .item2{
-    float: right;
-}
-.feedback .container .items .item .contain{
-    padding: 30px;
-    background-color: #fff;
-}
-.feedback .container .items .item .contain .user{
-    width: 15%;
-    float: left;
-}
-.feedback .container .items .item .contain .user img{
-    width: 40px;
-}
-.feedback .container .items .item .contain .desc{
-    width: 85%;
-    float: left;
-}
-.feedback .container .items .item .contain .desc h4{
-    margin: 15px 0px 5px;
-    font-weight: 600;    
-    line-height: 1.2em !important;
-}
-.feedback .container .items .item:hover h4{
-    color: #8490ff;
-}
 
 /* Styling of Plan Section */
 
@@ -361,13 +515,36 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
     margin: auto;    
 }
 .plan .items .contain{
-    background-color: #F9F9FF;
+    background-color: #242526;
     margin: 70px 0px;
 }
 .plan .items .item{
     float: left;
     width: 25%;
     padding: 40px 30px;
+}
+.head2{
+    font-family: 'Indie Flower', cursive;
+    font-weight: 400;
+    color: #fefefe;
+    font-size: 36px;
+    margin: 0px 0px;
+    text-decoration: 3px underline dashed #1fd655;
+}
+.plan p{
+    font-family: 'Sono', sans-serif;
+    color: #feffef;
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 10px;
+}
+.plan .items p{
+    font-family: 'Sono', sans-serif;
+    color: #feffef;
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 10px;
+    text-decoration: underline dashed #1fd655;
 }
 .plan .items .item > h2{
     align-items: center;
@@ -379,11 +556,22 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
     height: 140px;
     margin: auto;
 }
+.plan li{
+    font-family: 'Sono', sans-serif;
+    color: #feffef;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 0px;
+    
+}
 .plan .items .item h4{
     color: #222222;
     line-height: 1.2em !important;
-    font-weight: 600;
-    margin: 15px 0px 10px;
+    font-family: 'indie flower', cursive;
+    font-size: 24px;
+    color:#1fd655;
+    font-weight: 500;
+    margin: 15px 0px 0px;
 }
 .plan .items .item p{
     margin-bottom: 1rem;
@@ -478,32 +666,171 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
     padding: 20px 0px ;
 }
 
+.weirda {
+    text-decoration: none;
+    background: #18191a;
+    padding: 1px 40px;
+    font-weight: 400;
+    font-size: 28px;
+    color: white;
+    border: solid #1fd655;
+    border-radius: 35px;
+    font-family: 'Indie Flower', cursive;
+
+}
+.gmp{
+    margin: 40px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Social Button */
+.social {
+    border: solid 3px #d6d6d6;
+    padding: 10px;
+    background-color: #d6d6d6;
+    margin: auto;
+
+}
+
+.rounded-social-buttons {
+    text-align: center;
+  }
+  
+.rounded-social-buttons .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 0.125rem solid transparent;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fefefe;
+    font-size: 1.5625rem;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 1.6875rem;
+    transition: all 0.5s ease;
+    margin-top: 0.25rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.255rem;
+  }
+  
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  
+.rounded-social-buttons .fa-twitch, .fa-twitter, .fa-discord, .fa-github, .fa-youtube, .fa-instagram {
+    font-size: 25px;
+  }
+  
+.rounded-social-buttons .social-button.twitch {
+    background: #6441a5;
+  }
+  
+.rounded-social-buttons .social-button.twitch:hover, .rounded-social-buttons .social-button.facebook:focus {
+    color: #6441a5;
+    background: #fefefe;
+    border-color: #6441a5;
+  }
+  
+.rounded-social-buttons .social-button.twitter {
+    background: #55acee;
+  }
+  
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+    color: #55acee;
+    background: #fefefe;
+    border-color: #55acee;
+  }
+  
+.rounded-social-buttons .social-button.discord {
+    background: #5865F2;
+  }
+  
+.rounded-social-buttons .social-button.discord:hover, .rounded-social-buttons .social-button.linkedin:focus {
+    color: #5865F2;
+    background: #fefefe;
+    border-color: #5865F2;
+  }
+  
+.rounded-social-buttons .social-button.youtube {
+    background: #bb0000;
+  }
+  
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+    color: #bb0000;
+    background: #fefefe;
+    border-color: #bb0000;
+  }
+  
+.rounded-social-buttons .social-button.instagram {
+    background: #f511d3;
+  }
+  
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+    color: #f511d3;
+    background: #fefefe;
+    border-color: #f511d3;
+  }
+
+  .rounded-social-buttons .social-button.github {
+    background: #171515;
+  }
+  
+.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.facebook:focus {
+    color: #171515;
+    background: #fefefe;
+    border-color: #171515;
+  }
+  
 /* Styling of Footer */
 
 footer{
     background-color: #04091E;
-    color: #777777;
-    padding: 60px 0px;
+    color: #feffef;
+    padding: 10px 0px;
+    font-family: 'Sono', sans-serif;
+    font-weight: 300!important;
+}
+footer h4{
+    font-family: 'Indie Flower', cursive;
+    font-weight: 400!important;
+    font-size: 35px!important;
+    text-decoration: underline 2px dashed #1fd655;
+
+}
+footer p{
+    font-family: 'Sono', sans-serif!important;
 }
 footer .container{
     width: 82%;
     padding: 50px 0px;
     margin: auto;
     display: flex;
+    font-family: 'Sono', sans-serif;
 }
 footer .container .about-me , footer .container .new{
     width: 40%;
+    font-family: 'Sono', sans-serif;
 }
 footer .container .flow{
     width: 30%;
+    font-family: 'Sono', sans-serif;
 }
 footer .container .new , footer .container .flow {
     padding-left: 40px;
+    
 }
 footer .container .about-me h4 , footer .container .new h4 , footer .container .flow h4{
     margin-bottom: 25px;
-    font-weight: 500;
     font-size: 18px;
+    
 }
 footer .container .new input{
     width: 88%;
@@ -526,7 +853,6 @@ footer .container .new .icon i{
 footer .container .about-me p , footer .container .new p , footer .container .flow p{
     margin-bottom: 1rem;
     font-size: 14px;
-    font-weight: 400;
     line-height: 1.625em;
 }
 footer .container .about-me p a {
@@ -645,133 +971,37 @@ footer .container .flow ul li a i:hover{
         width: 100%;
     }
 }
-.weirda {
-    text-decoration: none;
-    background: linear-gradient(0deg, rgb(132, 144, 255) 0%, rgb(98, 189, 252) 100%);
-    padding: 15px 40px;
-    font-weight: 500;
-    font-size: 18px;
-    color: white;
+
+.alink{
+  text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    #1fd,
+    #1fd655 50%,
+    #fff 50%
+  );
+  font-weight:300;
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  color:#fff;
+  
 }
-.gmp{
-    margin: 40px;
+.alink:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+  }
+.alink:hover {
+    background-position: 0;
 }
-html{
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
+.alink:hover::before {
+    width: 100%;
   }
-  
-.rounded-social-buttons {
-    text-align: center;
-  }
-  
-.rounded-social-buttons .social-button {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    width: 3.125rem;
-    height: 3.125rem;
-    border: 0.125rem solid transparent;
-    padding: 0;
-    text-decoration: none;
-    text-align: center;
-    color: #fefefe;
-    font-size: 1.5625rem;
-    font-weight: normal;
-    line-height: 2em;
-    border-radius: 1.6875rem;
-    transition: all 0.5s ease;
-    margin-up: 0rem;
-    margin-right: 0.25rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.255rem;
-  }
-  
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
-    -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  
-.rounded-social-buttons .fa-twitch, .fa-twitter, .fa-discord, .fa-github, .fa-youtube, .fa-instagram {
-    font-size: 25px;
-  }
-  
-.rounded-social-buttons .social-button.twitch {
-    background: #6441a5;
-  }
-  
-.rounded-social-buttons .social-button.twitch:hover, .rounded-social-buttons .social-button.facebook:focus {
-    color: #6441a5;
-    background: #fefefe;
-    border-color: #6441a5;
-  }
-  
-.rounded-social-buttons .social-button.twitter {
-    background: #55acee;
-  }
-  
-.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
-    color: #55acee;
-    background: #fefefe;
-    border-color: #55acee;
-  }
-  
-.rounded-social-buttons .social-button.discord {
-    background: #5865F2;
-  }
-  
-.rounded-social-buttons .social-button.discord:hover, .rounded-social-buttons .social-button.linkedin:focus {
-    color: #5865F2;
-    background: #fefefe;
-    border-color: #5865F2;
-  }
-  
-.rounded-social-buttons .social-button.youtube {
-    background: #bb0000;
-  }
-  
-.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
-    color: #bb0000;
-    background: #fefefe;
-    border-color: #bb0000;
-  }
-  
-.rounded-social-buttons .social-button.instagram {
-    background: #f511d3;
-  }
-  
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-    color: #f511d3;
-    background: #fefefe;
-    border-color: #f511d3;
-  }
-
-  .rounded-social-buttons .social-button.github {
-    background: #171515;
-  }
-  
-.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.facebook:focus {
-    color: #171515;
-    background: #fefefe;
-    border-color: #171515;
-  }
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
