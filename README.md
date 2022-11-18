@@ -8,7 +8,7 @@ This is My Personal-Website, A Portfolio for myself. Ah. Github, Best Way To Hos
 -   I code in python and html, *nicely*, others, I try. just try.
 -   I am a good brainstormer, and I will find an idea for you. make sure you do that before me.
 
-### https://**[Sarthak-Sidhant.github.io](http://Sarthak-Sidhant.github.io) is the only link this website is hosted. currently.**
+### https://**[sarthaksidhant.me](http://Sarthak-Sidhant.me) are the only links this website is hosted. currently.**
 
 > "If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat. If you know neither the enemy nor yourself, you will succumb in every battle."
 
@@ -23,3 +23,5 @@ About My Recent Stuff:
 
 That's Pretty Much It, Here's My Music Likings: Sammy Rash, Powfu, Ryan Mack, Bo Burnham, Dream-Alec Benjamin. Just Thought to Put It Here Cuz **Why Not**.
 Some Man's Passions is Another's Copyright
+
+(early access: sarthaksidhant.me/laterindex.html) dont tell anyone pls
