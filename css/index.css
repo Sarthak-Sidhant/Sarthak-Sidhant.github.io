@@ -58,7 +58,7 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
   transition: all 0.3s ease;
 }
 .navbar.sticky{
-  background: #1b1b1b;
+  background: #05090F  ;
   padding: 10px 0;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
@@ -109,6 +109,8 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
 .about p{
   padding-top: 20px;
   text-align: justify;
+  padding-right: 25px;
+  margin-right:10px;
 }
 .icon{
   color: #fff;
@@ -227,13 +229,27 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
 .home .container .text span{
     margin: 10px 0 0 0;
     font-family: 'Ms Madi', cursive;
-    font-size: 64px;
+    font-size: 12vw;
     font-weight: 300;
-    background: linear-gradient(to right, #ff0000,#ff00b4, #0064c8) no-repeat right bottom / 0 var(--bg-h);
-    transition: background-size 350ms;
-    --bg-h: 10%;
-    border-radius: 30px;
+    transition: 0.2s;
+    display: inline-block;
 }
+/*try  1*/
+.home .container .text span:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    border-radius: 4px;
+    background: linear-gradient(to right, #ff0000,#ff00b4, rgb(248, 183, 3), #0064c8);
+    margin-top: -15px;
+    transition: width .4s;
+}
+
+.home .container .text span:hover:after {
+    width: 100%;
+}
+
 .home .container .text span:where(:hover, :focus-visible) {
     background-size: 100% var(--bg-h);
     background-position-x: left;
@@ -288,6 +304,8 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
 .about{
     padding: 30px 0px;
     color: #E4E6EB;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .about .contain{
     width: 50%;
@@ -306,7 +324,7 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
     text-decoration: underline 2px dashed #1fd655;
 }
 .about .contain .photo{
-    width: 100%;
+    width: 80%;
     padding-right: 30px;
 }
 .about .contain .photo img{
@@ -461,6 +479,7 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
     position: relative;
     margin-top: 30px;
     padding: 30px 0px;
+    background-color: #181818;
 }
 .projects ul li{
     float: left;
@@ -492,9 +511,9 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
     position: absolute;
     background:linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
     width: 100%;
-    border-radius: 8px;
+    border-radius: 12px;
     top: 0;
-    height: 98%;
+    height: 98.7%;
     display: flex;
     opacity: 0;
 }
@@ -1005,3 +1024,9 @@ footer .container .flow ul li a i:hover{
 .alink:hover::before {
     width: 100%;
   }
+.flow a{
+    text-decoration: none;
+    padding-bottom: 0!important;
+    margin-bottom: 0!important;
+
+}
