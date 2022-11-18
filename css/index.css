@@ -229,7 +229,7 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
 .home .container .text span{
     margin: 10px 0 0 0;
     font-family: 'Ms Madi', cursive;
-    font-size: 12vw;
+    font-size: 56px;
     font-weight: 300;
     transition: 0.2s;
     display: inline-block;
