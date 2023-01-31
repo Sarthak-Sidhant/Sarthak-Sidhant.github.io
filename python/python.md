@@ -28,21 +28,21 @@ Follow the tutorial below:
 You’re supposed to learn the basics & Try Talking in Python Language, Adopt It To Your Normal Conversational Method.
 
 <aside>
-✅ Person 1: Hey! Whatsup Man!?
+        ✅ Person 1: Hey! Whatsup Man!?
 
-Person 2: print(”Howdy”)
+        Person 2: print(”Howdy”)
 
-Person 1: What?
+        Person 1: What?
 
-Person 2: print(”I am good”)
+        Person 2: print(”I am good”)
 
-Person 1: Are You Alright?
+        Person 1: Are You Alright?
 
-Person 2: if alright = True: print(”I’m definitely Alright”)
+        Person 2: if alright = True: print(”I’m definitely Alright”)
 
-        else: print(”not really”)
+                else: print(”not really”)
 
-Person 1: *Casually Leaves*
+        Person 1: *Casually Leaves*
 
 </aside>
 
