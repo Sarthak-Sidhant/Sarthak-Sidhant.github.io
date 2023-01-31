@@ -28,6 +28,7 @@ Follow the tutorial below:
 You’re supposed to learn the basics & Try Talking in Python Language, Adopt It To Your Normal Conversational Method.
 
 <aside>
+
         ✅ Person 1: Hey! Whatsup Man!?
 
         Person 2: print(”Howdy”)
