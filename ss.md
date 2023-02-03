@@ -1,7 +1,7 @@
 ---
 permalink: /ss.html
 ---
-#sarthaksid
+# sarthaksid's secret portfolio
 
 <h1 align="center">Hey Everyone! <img alt="wave" src="https://emojis.slackmojis.com/emojis/images/1588177020/8809/wave_hello.gif?1588177020" width="35">I'm Sarthak Sidhant!</h1>
 <h3 id="motd" align="center"> The 169th Commit Of 2022. Happy New Year! <3</h3>
