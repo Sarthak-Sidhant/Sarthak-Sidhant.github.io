@@ -2,6 +2,7 @@
 permalink: /pigeon.html
 ---
 Message to Pigeon
+
 Dear Pigeon,
 
 It has come to our attention that you have failed to uphold a promise made to us with regards to a hand-drawn pigeon photo that was to be used as your profile picture upon reaching 50 followers. We are deeply disappointed to learn that you have not kept your word.
