@@ -14,3 +14,6 @@ We would like to remind you that any further threats or intimidation, including 
 Sincerely,
 
 The Sid Committee
+
+Here's the Tweet:
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If I get to 20 followers I’ll change my pfp to an actual pigeon. And if I get to 50 I’ll finish this drawing of a pigeon that I never finished and thatll be my pfp. 👌🏽 <a href="https://t.co/HGOGDbXNJf">pic.twitter.com/HGOGDbXNJf</a></p>&mdash; Pigeon (@ImjustapigeonS) <a href="https://twitter.com/ImjustapigeonS/status/1587048742238167040?ref_src=twsrc%5Etfw">October 31, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
