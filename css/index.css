@@ -986,7 +986,7 @@ footer .container .flow ul li a i:hover{
     transition: .5s;
     overflow: hidden;
     margin: .85rem;
-    background-color: white;
+    background-color: #18191a;
 }
 .card:hover{
     height: 397px;
@@ -1007,16 +1007,18 @@ footer .container .flow ul li a i:hover{
 }
 
 .card .card-body h6{
+    font-family: 'Indie Flower', cursive;
     margin: .5rem 0;
-    font-size: .85rem;
-    color: crimson;
+    font-size: 1.25rem;
+    color: #1fd655;
     letter-spacing: 3px;
+    font-weight: bolder;
 }
-
 .card .card-body p{
     text-align: justify;
     font-size: .9rem;
     line-height: 25px;
+    color:white;
 }
 
 .card .card-body div{
