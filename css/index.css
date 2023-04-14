@@ -1015,7 +1015,7 @@ footer .container .flow ul li a i:hover{
     font-weight: bolder;
 }
 .card .card-body p{
-    text-align: justify;
+    text-align: left;
     font-size: .9rem;
     line-height: 25px;
     color:white;
