@@ -24,4 +24,3 @@ About My Recent Stuff:
 That's Pretty Much It, Here's My Music Likings: Sammy Rash, Powfu, Ryan Mack, Bo Burnham, Dream-Alec Benjamin. Just Thought to Put It Here Cuz **Why Not**.
 Some Man's Passions is Another's Copyright
 
-(early access: sarthaksidhant.me/laterindex.html) dont tell anyone pls
