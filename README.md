@@ -24,3 +24,7 @@ About My Recent Stuff:
 That's Pretty Much It, Here's My Music Likings: Sammy Rash, Powfu, Ryan Mack, Bo Burnham, Dream-Alec Benjamin. Just Thought to Put It Here Cuz **Why Not**.
 Some Man's Passions is Another's Copyright
 
+Updates:
+--------
+Recently started working on Sidhant Hyperspace, an umbrella company that encompasses various projects and initiatives.
+Also working on Decodificate, https://dsc.gg/decodificate (we lost the vanity)
