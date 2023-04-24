@@ -191,6 +191,7 @@ footer .container .flow ul li a i , .home .container .text a , .about .text a, .
     margin: auto;
     padding-top: 50px;
     font-family: 'Sono', sans-serif;
+    margin-bottom: 25px;
 }
 .home .container .text{
     width: 50%;
