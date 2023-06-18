@@ -1,9 +1,9 @@
 # Sarthak Sidhant's Webpage.
 This is My Personal-Website, A Portfolio for myself. Ah. Github, Best Way To Host Crap! Innit!?
 
--   I am a student studying science and web-development, other things too but I don't like 'em
+-   I am a student learning science and web-development, other things too but I don't like 'em
 -   I am not really a professional, and hate Professionalism, It Kills Humor.
--   I am only active on discord. My Discord is `Sarthak Sidhant#4374`
+~~-   I am only active on discord. My Discord is `Sarthak Sidhant#4374`~~ my discord was terminated, im now active on my email: sarthaksidhantisopolice@gmail.com
 -   I love to troll people online. Whether it be a small wholesome joke, or a big racist joke.
 -   I code in python and html, *nicely*, others, I try. just try.
 -   I am a good brainstormer, and I will find an idea for you. make sure you do that before me.
