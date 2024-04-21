@@ -20,12 +20,7 @@ here's some stuff about me:
 
     
 
-About My Recent Stuff:
-----------------------
-
--   Rellekk-Z: An Interpreter, That Takes Visual Signals From Deaf And Mute People, and Translates 'em into text. knows european and american. (disclaimer: contains humor, not for twitter users. also, mocks deaf and mute people, in a good way cmon)
--   HoomansBOT: A Discord Bot That Basically knows everything, chug in some values and it'll churn up the valuable knowledge, just for you, can be commercial
--   Charc: A 7 Day Project Evolved Into A CLI Game in Python Languge, Well Documented in Social Media.
+#### 2024: the journey begins
 
 That's Pretty Much It, Here's My Music Likings: Sammy Rash, Powfu, Bill Wurtz, Ryan Mack, Bo Burnham, Dream-Alec Benjamin. Just Thought to Put It Here Cuz **Why Not?**.
 
