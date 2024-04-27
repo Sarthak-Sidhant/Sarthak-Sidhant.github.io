@@ -1,10 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Sono:wght@200..800&display=swap');
+
+
 *{
-    margin: auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-align: center;
 }
-span{
-    margin: 10%;
-    font-size: 58px;
+.name{
+    font-size: 72px;
+    font-family: "Ms Madi", cursive;
+    font-weight: 500;
+    font-style: normal;
+    margin:0;
+    padding:0;
+    line-height: 0;
 }
+
+.sono {
+    font-family: "Sono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "MONO" 0.4;
+    font-size: 1.75em;
+  }
+
+.bio{
+    margin-top:1%;
+}
+
+body {
+    transition: 0.65s ease-in-out, color 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: 40vh;
+    color: #000;
+    user-select: none;
+  }
+  
+  body[theme=dark] {
+    background: #000;
+    color: #fff;
+  }
+  
+  #hybrid {
+    visibility: hidden;
+  }
+  
+  #theme-toggle {
+    visibility: hidden;
+  }
+  
+  #theme-toggle + label {
+    content: '';
+    display: inline-block;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    align-items: right;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    position:fixed;
+    top: 5%;
+    right: 10%;
+  }
+  
+  #theme-toggle:not(:checked) + label {
+      background: linear-gradient(red, yellow);
+  }
+  
+  #theme-toggle:checked + label {
+    background-color: transparent;
+    box-shadow: inset -18px -16px 1px 1px #fff;
+  }
+  
+  .intro-text {
+    top: 180px;
+    font-size: 1.6em;
+    font-family: monospace;
+  }
+  
+  [class*=text-] {
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: color 500ms ease-in;
+  }
+  
+  body[theme=dark] {
+    .text-sun {
+      color: #808080;
+    }
+    .text-moon {
+      color: #fff;
+    }
+  }
+  
+  body[theme=light] {
+    .text-sun {
+      color: #000;
+    }
+    .text-moon {
+      color: #ddd;
+    }
+  }
+
