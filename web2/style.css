@@ -1,0 +1,10 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+span{
+    margin: 10%;
+    font-size: 58px;
+}
