@@ -27,15 +27,21 @@
       "MONO" 0.4;
     font-size: 1.75em;
   }
+
 .smaller{
-    font-size:1.5em;
+    font-size: 1.25em;
     
 }
 .bio{
     margin-top:1%;
     line-height: 0;
+    font-size:1.5em;
 }
-
+.flag{
+    height: 3vh;
+    width: auto;
+    
+}
 body {
     transition: 0.65s ease-in-out, color 0.5s ease-in-out;
     display: flex;
@@ -77,6 +83,7 @@ body {
   
   #theme-toggle:not(:checked) + label {
       background: linear-gradient(red, yellow);
+      border: solid black 0.02vh;
   }
   
   #theme-toggle:checked + label {
