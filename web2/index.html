@@ -9,18 +9,33 @@
 <body>
     <!-- <div class="intro-text">Hello! Click on the <span><span class="text-sun">sun</span>/<span class="text-moon">moon</span></span>. Go ahead, why don't you?</span>
     </div> -->
+    <div class="introgo">
+      <span class="name introv">Sarthak Sidhant</span> 
+    </div>
+
+<div class="blody">
     <div class="container">
       <input type="checkbox" id="theme-toggle">
       <label for="theme-toggle"></label>
     </div>
+    
     <div>
     <span class="name">Sarthak Sidhant</span>
-</div>
+    </div>
+    
     <p class="sono bio smaller">17, He/Him, <img class = "flag" src="india.svg" alt="Flag of India">
       <p class ="sono smaller">It is currently <span id="currentTime"></span> for me.</p>
     </p>  
-      
-      <script>
+</div>
+
+    
+
+
+
+
+
+
+<script>
         document.getElementById('theme-toggle').addEventListener('click', (e) => {
   const checked = e.target.checked;
   document.body.setAttribute('theme', checked ? 'dark' : 'light');
@@ -37,7 +52,7 @@ function displayLocalTime() {
     second: '2-digit',
     hour12: true // Add this for AM/PM
   });
-
+   
   // Update both the main display and the data-seconds attribute
   document.getElementById("currentTime").textContent = formattedTime;  
 
@@ -48,6 +63,9 @@ displayLocalTime();
 
 // Update the time every second
 setInterval(displayLocalTime, 1000); 
-      </script>
+</script>
+
+
+
 </body>
 </html>
