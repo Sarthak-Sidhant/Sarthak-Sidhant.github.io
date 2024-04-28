@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+     .intro-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* Adjust as needed */
+}
+
+.name {
+  font-size: 3em; /* Adjust font size */
+  font-weight: bold;
+  position: relative; /* Reset positioning */
+  right: 20px;   
+  bottom: 20px; 
+  opacity: 0; 
+  animation: introAnimation 4s ease-in forwards; /* Adjust animation properties */
+}
+
+@keyframes introAnimation {
+  0% { opacity: 0; }
+  50% { opacity: 1; } /* Hold visibility for a moment */
+  100% {
+    opacity: 0;  
+    
+  }
+}
+
+    </style>
+    <div class="intro-container">
+      <span class="name">Your Name</span> 
+    </div>
+    
+</body>
+</html>
