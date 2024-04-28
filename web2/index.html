@@ -16,13 +16,37 @@
     <div>
     <span class="name">Sarthak Sidhant</span>
 </div>
-    <p class="sono bio smaller">17, He/Him, 🇮🇳</p>
+    <p class="sono bio smaller">17, He/Him, <img class = "flag" src="india.svg" alt="Map of India">
+      <p class ="sono smaller">It is currently <span id="currentTime"></span> for me.</p>
+    </p>
       
       <script>
         document.getElementById('theme-toggle').addEventListener('click', (e) => {
   const checked = e.target.checked;
   document.body.setAttribute('theme', checked ? 'dark' : 'light');
 });
+function displayLocalTime() {
+  const ISTOffset = 330; // IST is +5:30 from UTC
+  const date = new Date();
+  const utcTime = date.getTime() + (date.getTimezoneOffset() * 60000); // Convert to UTC
+  const ISTTime = new Date(utcTime + ISTOffset * 60000); // Adjust for IST
+
+  const formattedTime = ISTTime.toLocaleTimeString([], {
+    hour: '2-digit', 
+    minute: '2-digit',
+    second: '2-digit' 
+  });
+
+  // Update both the main display and the data-seconds attribute
+  document.getElementById("currentTime").textContent = formattedTime.slice(0, -3); // Remove seconds initially
+  document.getElementById("currentTime").dataset.seconds = formattedTime.slice(-2);  // Store seconds 
+}
+
+// Initial display
+displayLocalTime();
+
+// Update the time every second
+setInterval(displayLocalTime, 1000); 
       </script>
 </body>
 </html>
