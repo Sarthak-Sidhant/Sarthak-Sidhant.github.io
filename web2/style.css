@@ -31,10 +31,18 @@
 
 .smaller{
     font-size: 1.25em;
+    line-height: 2em;
     
 }
+.at{
+    color: #1fd655; 
+}
+h2{
+    font-family: "chivo mono", monospace;
+    font-weight: 600;
+}
 .bio{
-    margin-top:1%;
+    margin-top:3%;
     line-height: 0;
     font-size:1.5em;
 }
@@ -43,6 +51,8 @@
     width: auto;
     
 }
+
+/**light mode dark mode func**/
 body {
     transition: 0.65s ease-in-out, color 0.5s ease-in-out;
     display: flex;
