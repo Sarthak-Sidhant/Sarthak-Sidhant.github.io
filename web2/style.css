@@ -151,7 +151,7 @@ body {
         width: 60%;
     }
     80% {
-        width: 80%;
+        width:90%;
     }
     100% {
         width: 100%;
@@ -182,7 +182,7 @@ body {
   }
   @keyframes introAnimation {
     0% { opacity: 0; }
-    40% { opacity: 1; } /* Hold visibility for a moment */
+    50% { opacity: 1; } /* Hold visibility for a moment */
     100% {
       opacity: 0;  
       
@@ -194,6 +194,8 @@ body {
     transition:fade;
     animation: introFadeIn 8.4s;
     animation-fill-mode: forwards;
+    animation-timing-function: linear ;
+    transition:linear;
    }
 
 @keyframes introFadeIn {
@@ -203,11 +205,11 @@ body {
     25% {
       opacity: 0;
     }
-    50% {
-      opacity: 0;
+    60%{
+        opacity: 0;
     }
-    75% {
-      opacity: 0.5;
+    69%{
+        opacity: 100%;
     }
     100% {
       opacity: 1;
