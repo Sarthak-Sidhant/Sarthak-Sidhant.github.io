@@ -9,10 +9,10 @@
 <body>
     <!-- <div class="intro-text">Hello! Click on the <span><span class="text-sun">sun</span>/<span class="text-moon">moon</span></span>. Go ahead, why don't you?</span>
     </div> -->
-    <div class="introgo">
+    <div class="introgo"> 
       <span class="name introv">Sarthak Sidhant</span> 
     </div>
-
+     <!-- contenteditable="true" -->
 <div class="blody">
     <div class="container">
       <input type="checkbox" id="theme-toggle">
@@ -20,7 +20,7 @@
     </div>
     
     <div>
-    <span class="name">Sarthak Sidhant</span>
+    <span class="name" >Sarthak Sidhant</span>
     </div>
     
     <p class="sono bio smaller">17, He/Him, <img class = "flag" src="india.svg" alt="Flag of India">
@@ -28,18 +28,19 @@
     </p>  
 </div>
 
-    
-
 
 
 
 
 
 <script>
-        document.getElementById('theme-toggle').addEventListener('click', (e) => {
+  // light mode to dark mode functionality
+  document.getElementById('theme-toggle').addEventListener('click', (e) => {
   const checked = e.target.checked;
   document.body.setAttribute('theme', checked ? 'dark' : 'light');
 });
+
+//display of local time functionality
 function displayLocalTime() {
   const ISTOffset = 330; // IST is +5:30 from UTC
   const date = new Date();
@@ -53,7 +54,7 @@ function displayLocalTime() {
     hour12: true // Add this for AM/PM
   });
    
-  // Update both the main display and the data-seconds attribute
+// Update both the main display and the data-seconds attribute
   document.getElementById("currentTime").textContent = formattedTime;  
 
 } 
@@ -63,6 +64,7 @@ displayLocalTime();
 
 // Update the time every second
 setInterval(displayLocalTime, 1000); 
+
 </script>
 
 
