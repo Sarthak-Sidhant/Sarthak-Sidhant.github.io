@@ -24,7 +24,8 @@
     </div>
     
     <p class="sono bio smaller">17, He/Him, <img class = "flag" src="india.svg" alt="Flag of India">
-      <p class ="sono smaller">It is currently <span id="currentTime"></span> for me.</p>
+      <p class ="sono smaller">It is currently <span id="currentTime"></span> for me. (IST = GMT+5:30)</p>
+      <h2 class="jobdesc"> Manager <span class= "at">@</span> Sidhant Hyperspace&trade;</h2>
     </p>  
 </div>
 
@@ -34,11 +35,26 @@
 
 
 <script>
-  // light mode to dark mode functionality
-  document.getElementById('theme-toggle').addEventListener('click', (e) => {
-  const checked = e.target.checked;
-  document.body.setAttribute('theme', checked ? 'dark' : 'light');
+  //    // Detect user's initial preference
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+// Set the theme attribute based on the user's preference
+document.body.setAttribute('theme', prefersDarkMode ? 'dark' : 'light');
+
+// Modify the checkbox based on initial preference
+document.getElementById('theme-toggle').checked = prefersDarkMode; 
+
+// Toggle functionality 
+document.getElementById('theme-toggle').addEventListener('click', (e) => {
+    // Get the current theme (important)
+    const currentTheme = document.body.getAttribute('theme');
+
+    // Update the theme based on the current theme, not the checkbox state
+    document.body.setAttribute('theme', currentTheme === 'light' ? 'dark' : 'light'); 
 });
+
+
+
 
 //display of local time functionality
 function displayLocalTime() {
