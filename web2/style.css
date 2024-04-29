@@ -51,7 +51,29 @@ h2{
     width: auto;
     
 }
+h3{
+    margin:0.5em;
+    font-family: "chivo mono", monospace;
+    font-weight: 400;
+    text-decoration: underline 3px #1fd655 dashed;
+    text-underline-offset: 3px;
+}
+.outerbio{
+    max-width:fit-content;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: justify;
+    width: 70%;
+    margin-top: 3vh;
+    padding:0.5em;
+}
+.biography{
+    margin:0.6em;
+    font-family:"chivo mono", monospace;
+    font-weight: 300;
+    
 
+}
 a:link {
     position: relative;
     text-decoration: none;
@@ -84,12 +106,13 @@ body {
     justify-content: center;
     gap: 20px;
     align-items: center;
-    height: 40vh;
+    margin: 5vh;
     color: #000;
     user-select: none;
     a:link, a:visited{
         color: inherit;
     }
+    overflow:auto;
   }
   
   body[theme=dark] {
@@ -224,7 +247,9 @@ body {
     0% { opacity: 0; }
     50% { opacity: 1; } /* Hold visibility for a moment */
     100% {
-      opacity: 0;  
+      opacity: 0;
+      visibility: hidden;
+      position:static;
       
     }
   }
