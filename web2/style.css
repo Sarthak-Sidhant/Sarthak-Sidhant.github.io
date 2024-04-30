@@ -74,6 +74,14 @@ h3{
     
 
 }
+.subheading{
+    font-family: "chivo mono", monospace;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-top: 1vh;
+
+}
+/*a link formatting formatting*/
 a:link {
     position: relative;
     text-decoration: none;

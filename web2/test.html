@@ -109,23 +109,23 @@ body[theme=light] {
     <h1>sarthak</h1>
 
     <script>
-      // Detect user's initial preference
-const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        // Detect user's initial preference
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-// Set the theme attribute based on the user's preference
-document.body.setAttribute('theme', prefersDarkMode ? 'dark' : 'light');
+    // Set the theme attribute based on the user's preference
+    document.body.setAttribute('theme', prefersDarkMode ? 'dark' : 'light');
 
-// Modify the checkbox based on initial preference
-document.getElementById('theme-toggle').checked = prefersDarkMode; 
+    // Modify the checkbox based on initial preference
+    document.getElementById('theme-toggle').checked = prefersDarkMode; 
 
-// Toggle functionality 
-document.getElementById('theme-toggle').addEventListener('click', (e) => {
-    // Get the current theme (important)
-    const currentTheme = document.body.getAttribute('theme');
+    // Toggle functionality 
+    document.getElementById('theme-toggle').addEventListener('click', (e) => {
+        // Get the current theme (important)
+        const currentTheme = document.body.getAttribute('theme');
 
-    // Update the theme based on the current theme, not the checkbox state
-    document.body.setAttribute('theme', currentTheme === 'light' ? 'dark' : 'light'); 
-});
+        // Update the theme based on the current theme, not the checkbox state
+        document.body.setAttribute('theme', currentTheme === 'light' ? 'dark' : 'light'); 
+    });
 
 
     </script>
