@@ -8,6 +8,9 @@
     box-sizing: border-box;
     text-align: center;
 }
+:root{
+    --parrot: #19a943;
+}
 .name{
     font-size: 72px;
     font-family: "Ms Madi", cursive;
@@ -34,8 +37,23 @@
     line-height: 2em;
     
 }
+
+hr{
+  width: 35vw;
+  margin-bottom:2em;
+  margin: auto;
+  margin-top:.8em;
+  border-top: 0.6vh dashed var(--parrot);
+  border-bottom: none;
+
+}
+
+.connected{
+  line-height:1em!important;
+}
+
 .at{
-    color: #1fd655; 
+    color: var(--parrot); 
 }
 h2{
     font-family: "chivo mono", monospace;
@@ -55,7 +73,7 @@ h3{
     margin:0.5em;
     font-family: "chivo mono", monospace;
     font-weight: 400;
-    text-decoration: underline 3px #1fd655 dashed;
+    text-decoration: underline 3px var(--parrot) dashed;
     text-underline-offset: 3px;
 }
 .outerbio{
@@ -93,7 +111,7 @@ a:link {
       width: 100%;
       height: 0.18rem;
       border-radius: 4px;
-      background-color: #1fd655;
+      background-color: var(--parrot);
       bottom: 0;
       left: 0;
       transform-origin: right;
@@ -126,6 +144,7 @@ body {
   body[theme=dark] {
     background: #000;
     color: #fff;
+    --parrot:#1fd655;
     a:link, a:visited {
         color: inherit;
       }
@@ -287,4 +306,48 @@ body {
     100% {
       opacity: 1;
     }
+  }
+/* sticky socials */
+
+.sticky-social{
+  position:fixed;
+  top:30vh;
+  left:0;
+  padding:0px;
+  margin:0px;
+  }
+  .social{
+  list-style:none;
+  }
+  .social li{
+  padding:10px 10px;
+  font-size:25px;
+  transition:all 0.8s ease-in-out;
+  }
+  .social li:hover{
+  margin-right:-30px;
+  box-shadow:2px 5px 10px grey;
+  }
+  .social li:hover .fa{
+  margin-left:20px;
+  
+  }
+  .fa{
+  color:#fff;
+  transition:all 0.8s ease-in-out;
+  }
+  .fb{
+  background-color:#3C5A98;
+  }
+  .twitter{
+  background-color:#1EA1F2;
+  }
+  .insta{
+  background-color:#DC4F42;
+  }
+  .pin{
+  background-color:#CB2128;
+  }
+  .vim{
+  background-color:#59BFBE;
   }
