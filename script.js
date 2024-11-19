@@ -1,50 +1,32 @@
-let activeIndex = 0;
-const slides = document.getElementsByTagName("article");
-const handleLeftClick = () => {
-  const nextIndex = activeIndex - 1 >= 0 ? activeIndex - 1 : slides.length - 1;
-  const [currentSlide, nextSlide] = getSlideElements(activeIndex, nextIndex);
+document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.card-wrapper', {
+        loop: true,
+        spaceBetween: 30,
 
-  setSlideStatus(currentSlide, "after");
-  setSlideStatus(nextSlide, "becoming-active-from-before");
+        // Pagination bullets
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true
+        },
 
-  setTimeout(() => {
-    setSlideStatus(nextSlide, "active");
-    activeIndex = nextIndex;
-  });
-};
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
 
-const handleRightClick = () => {
-  const nextIndex = activeIndex + 1 <= slides.length - 1 ? activeIndex + 1 : 0;
-  const [currentSlide, nextSlide] = getSlideElements(activeIndex, nextIndex);
-
-  setSlideStatus(currentSlide, "before");
-  setSlideStatus(nextSlide, "becoming-active-from-after");
-
-  setTimeout(() => {
-    setSlideStatus(nextSlide, "active");
-    activeIndex = nextIndex;
-  });
-};
-
-const getSlideElements = (currentIndex, nextIndex) => [
-  document.querySelector(`[data-index="${currentIndex}"]`),
-  document.querySelector(`[data-index="${nextIndex}"]`)
-];
-
-const setSlideStatus = (slide, status) => {
-  slide.dataset.status = status;
-};
-
-/* -- Mobile Nav Toggle -- */
-
-const nav = document.querySelector("nav");
-const handleNavToggle = () => {
-  nav.dataset.transitionable = "true";
-  nav.dataset.toggled = nav.dataset.toggled === "true" ? "false" : "true";
-};
-
-const mediaQuery = window.matchMedia("(max-width: 800px)");
-mediaQuery.onchange = (e) => {
-  nav.dataset.transitionable = "false";
-  nav.dataset.toggled = "false";
-};
+        // Responsive breakpoints
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 2
+            },
+            1024: {
+                slidesPerView: 3
+            }
+        }
+    });
+});
