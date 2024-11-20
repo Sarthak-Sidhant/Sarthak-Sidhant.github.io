@@ -9,7 +9,7 @@
 }
 
 :root {
-    --parrot: #19a943;
+    --parrot: #16983c;
 }
 
 .name {
@@ -365,6 +365,7 @@ body[theme=light] {
 
 .rounded-social-buttons .social-button.twitch {
     background: #6441a5;
+    border-color: #fefefe;
 }
 
 .rounded-social-buttons .social-button.twitch:hover,
@@ -376,6 +377,7 @@ body[theme=light] {
 
 .rounded-social-buttons .social-button.twitter {
     background: #55acee;
+    border-color: #fefefe;
 }
 
 .rounded-social-buttons .social-button.twitter:hover,
@@ -387,6 +389,7 @@ body[theme=light] {
 
 .rounded-social-buttons .social-button.discord {
     background: #5865F2;
+    border-color: #fefefe;
 }
 
 .rounded-social-buttons .social-button.discord:hover,
@@ -398,6 +401,7 @@ body[theme=light] {
 
 .rounded-social-buttons .social-button.youtube {
     background: #bb0000;
+    border-color: #fefefe;
 }
 
 .rounded-social-buttons .social-button.youtube:hover,
@@ -409,6 +413,7 @@ body[theme=light] {
 
 .rounded-social-buttons .social-button.instagram {
     background: #f511d3;
+    border-color: #fefefe;
 }
 
 .rounded-social-buttons .social-button.instagram:hover,
@@ -544,7 +549,7 @@ body[theme=light] {
     }
 }
 code {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     max-width: 30vw;
 }
 
@@ -571,7 +576,7 @@ code {
 
 .card-list .card-item .card-link {
     display: block!important;
-    background: #000!important;
+    background: #dfe5df;
     padding: 18px!important;
     user-select: none!important;
     border-radius: 12px!important;
@@ -614,28 +619,29 @@ code {
 }
 
 .card-list .card-link .badge-tutorials {
-    color: #B25A2B;
-    background: #FFE3D2;
+    color: #B25A2B!important;
+    background: #FFE3D2!important;
 }
 
 .card-list .card-link .badge-blogs {
-    color: #5372F0;
+    color: #5372F0!important;
 }
 
 .card-list .card-link .badge-philosophy {
-    color: #205C20;
-    background: #D6F8D6;
+    color: #205C20!important;
+    background: #D6F8D6!important;
 }
 
 .card-list .card-link .badge-news {
-    color: #856404;
-    background: #fff3cd;
+    color: #856404!important;
+    background: #fff3cd!important;
 }
 
 .card-list .card-link .card-title {
     color: var(--parrot)!important;
     font-size: 1.19rem!important;
     font-weight: 600!important;
+    color: #11762e!important;
 }
 
 .card-list .card-link .card-button {
@@ -680,5 +686,14 @@ code {
   
     .card-wrapper .swiper-slide-button {
       display: none!important;
+    }
+}
+
+body[theme=dark]{
+    .card-list .card-item .card-link{
+    background: #111a11!important;
+}
+    .card-list .card-link .card-title {
+    color: #1fd655!important;
     }
 }
