@@ -18,11 +18,10 @@ here's some stuff about me:
 > "If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat. If you know neither the enemy nor yourself, you will succumb in every battle."
 >     -   Sun Tzu, The Art Of War
 
-#### 2024: the journey begins
-
-That's Pretty Much It, Here's My Music Likings: Sammy Rash, Powfu, Bill Wurtz, Ryan Mack, Bo Burnham, Dream-Alec Benjamin. Just Thought to Put It Here Cuz **Why Not?**.
+#### ~~2024: the journey begins~~
+nevermind absolutely hated that year
+#### 2025: lets see where this takes us
 
 Updates:
 --------
-Recently started working on Sidhant Hyperspace, an umbrella company that encompasses various projects and initiatives.
-
+I have no updated im a boring individual
